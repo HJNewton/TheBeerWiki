@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.thebeerwiki.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_beerlist"
+        android:name="com.example.thebeerwiki.ui.beerlist.BeerListFragment"
+        android:label="@string/menu_beer_list"
+        tools:layout="@layout/fragment_beer_list" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.thebeerwiki.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_lager"
+        android:name="com.example.thebeerwiki.ui.beers.LagerFragment"
+        android:label="Lagers"
+        tools:layout="@layout/fragment_lager" />
+
+    <fragment
+        android:id="@+id/nav_ale"
+        android:name="com.example.thebeerwiki.ui.beers.AleFragment"
+        android:label="Ales"
+        tools:layout="@layout/fragment_ale" />
+
+    <fragment
+        android:id="@+id/nav_stout"
+        android:name="com.example.thebeerwiki.ui.beers.StoutFragment"
+        android:label="Stout"
+        tools:layout="@layout/fragment_stout" />
+
+    <fragment
+        android:id="@+id/nav_carling"
+        android:name="com.example.thebeerwiki.ui.beers.CarlingFragment"
+        android:label="Carling"
+        tools:layout="@layout/fragment_carling" />
+
+</navigation>
