@@ -13,7 +13,7 @@ class CarlingViewModel : ViewModel()
                 "\n" +
                 "\nSince 1985, Carling has been the best selling beer throughout the entirety of Britain" +
                 "\n" +
-                "\nIn 1997 'Black Label' was no longer used in Britain, however it is still known as such in Canada and South Africa."
+                "\nIn 1997 the name 'Black Label' was no longer used in Britain, however it is still known as such in Canada and South Africa."
     }
     val aboutText: LiveData<String> = _aboutText
 }
