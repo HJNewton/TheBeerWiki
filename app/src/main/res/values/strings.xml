@@ -21,6 +21,8 @@
     <string name="alcohol_content">Alcohol Content</string>
     <string name="ingredients">Ingredients</string>
     <string name="country_of_origin">Country of Origin</string>
+    <string name="brewery_location">Brewery Location</string>
     <string name="first_brewed">First Brewed</string>
+    <string name="trivia">Trivia</string>
 
 </resources>
