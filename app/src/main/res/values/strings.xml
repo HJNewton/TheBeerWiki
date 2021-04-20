@@ -15,6 +15,10 @@
     <string name="stout">Stout</string>
     <string name="ale">Ale</string>
     <string name="carling">Carling</string>
+    <string name="fosters">Fosters</string>
+    <string name="carlsberg">Carlsberg</string>
+    <string name="peroni">Peroni</string>
+    <string name="coors_light">Coors Light</string>
     <string name="stella_artois">Stella Artois</string>
 
     <string name="information">Information</string>

@@ -5,14 +5,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/carling_image"
-        android:layout_width="206dp"
-        android:layout_height="245dp"
-        android:contentDescription="@string/carling"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/carling_image" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/carling_image"
+                    android:layout_width="206dp"
+                    android:layout_height="245dp"
+                    android:contentDescription="@string/carling"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/carling_image" />
+
+                <ImageView
+                    android:id="@+id/fosters_image"
+                    android:layout_width="206dp"
+                    android:layout_height="245dp"
+                    android:contentDescription="@string/fosters"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/fosters_image" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/carlsberg_image"
+                    android:layout_width="206dp"
+                    android:layout_height="245dp"
+                    android:contentDescription="@string/carlsberg"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/carlsberg_image" />
+
+                <ImageView
+                    android:id="@+id/peroni_image"
+                    android:layout_width="206dp"
+                    android:layout_height="245dp"
+                    android:contentDescription="@string/peroni"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/peroni_image" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/coors_light_image"
+                    android:layout_width="206dp"
+                    android:layout_height="245dp"
+                    android:contentDescription="@string/coors_light"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/coors_light_image" />
+
+                <ImageView
+                    android:id="@+id/stella_artois_image"
+                    android:layout_width="206dp"
+                    android:layout_height="245dp"
+                    android:contentDescription="@string/stella_artois"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/stella_artois_image" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
