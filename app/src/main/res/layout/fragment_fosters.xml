@@ -7,7 +7,7 @@
     tools:context=".ui.beerlist.BeerListFragment">
 
     <ImageView
-        android:id="@+id/carling_image"
+        android:id="@+id/fosters_image"
         android:layout_width="205dp"
         android:layout_height="245dp"
         android:layout_marginTop="20dp"
@@ -18,16 +18,16 @@
 "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/carling_image" />
+        app:srcCompat="@drawable/fosters_image" />
 
     <TableLayout
-        android:id="@+id/carling_table"
+        android:id="@+id/fosters_table"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carling_image">
+        app:layout_constraintTop_toBottomOf="@+id/fosters_image">
 
         <TableRow
             android:layout_width="match_parent"
@@ -107,7 +107,7 @@
                 android:layout_weight="1"
                 android:background="@color/yellow_300"
                 android:gravity="center"
-                android:text="Barley, Wheat" />
+                android:text="Barley, Malted Barley, Glucose Syrup" />
         </TableRow>
 
         <TableRow
@@ -137,7 +137,7 @@
                 android:layout_weight="1"
                 android:background="@color/yellow_300"
                 android:gravity="center"
-                android:text="Burton-on-Trent" />
+                android:text="Manchester" />
         </TableRow>
 
         <TableRow
@@ -167,7 +167,7 @@
                 android:layout_weight="1"
                 android:background="@color/yellow_300"
                 android:gravity="center"
-                android:text="Canada" />
+                android:text="Australia" />
         </TableRow>
 
         <TableRow
@@ -197,20 +197,20 @@
                 android:layout_weight="1"
                 android:background="@color/yellow_300"
                 android:gravity="center"
-                android:text="1927" />
+                android:text="1888" />
         </TableRow>
 
     </TableLayout>
 
     <TextView
-        android:id="@+id/carling_trivia_text"
+        android:id="@+id/fosters_trivia_text"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/carling_table"
-        app:layout_constraintStart_toStartOf="@+id/carling_table"
-        app:layout_constraintTop_toBottomOf="@+id/carling_table" />
+        app:layout_constraintEnd_toEndOf="@+id/fosters_table"
+        app:layout_constraintStart_toStartOf="@+id/fosters_table"
+        app:layout_constraintTop_toBottomOf="@+id/fosters_table" />
 
     <TextView
         android:id="@+id/trivia"
@@ -220,9 +220,10 @@
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/carling_table"
+        app:layout_constraintBottom_toTopOf="@+id/fosters_trivia_text"
+        app:layout_constraintEnd_toEndOf="@+id/fosters_table"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/carling_table"
-        app:layout_constraintTop_toBottomOf="@+id/carling_table" />
+        app:layout_constraintStart_toStartOf="@+id/fosters_table"
+        app:layout_constraintTop_toBottomOf="@+id/fosters_table" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

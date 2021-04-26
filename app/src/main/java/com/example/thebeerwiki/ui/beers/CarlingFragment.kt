@@ -24,7 +24,6 @@ class CarlingFragment : Fragment()
             ViewModelProvider(this).get(CarlingViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_carling, container, false)
 
-        // CARLING
         val carlingImage: ImageView = root.findViewById(R.id.carling_image)
         carlingImage.setImageResource(R.drawable.carling_image)
 

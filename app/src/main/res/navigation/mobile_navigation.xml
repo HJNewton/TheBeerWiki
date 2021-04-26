@@ -47,4 +47,36 @@
         android:label="Carling"
         tools:layout="@layout/fragment_carling" />
 
+    <fragment
+        android:id="@+id/nav_fosters"
+        android:name="com.example.thebeerwiki.ui.beers.FostersFragment"
+        android:label="Fosters"
+        tools:layout="@layout/fragment_fosters" />
+
+    <fragment
+        android:id="@+id/nav_carlsberg"
+        android:name="com.example.thebeerwiki.ui.beers.CarlsbergFragment"
+        android:label="Carlsberg"
+        tools:layout="@layout/fragment_carlsberg" />
+
+    <fragment
+        android:id="@+id/nav_peroni"
+        android:name="com.example.thebeerwiki.ui.beers.PeroniFragment"
+        android:label="Peroni"
+        tools:layout="@layout/fragment_peroni" />
+
+    <fragment
+        android:id="@+id/nav_coors_light"
+        android:name="com.example.thebeerwiki.ui.beers.CoorsLightFragment"
+        android:label="Coors Light"
+        tools:layout="@layout/fragment_coors_light" />
+
+    <fragment
+        android:id="@+id/nav_stella_artois"
+        android:name="com.example.thebeerwiki.ui.beers.StellaArtoisFragment"
+        android:label="Stella Artois"
+        tools:layout="@layout/fragment_stella_artois" />
+
+
+
 </navigation>
