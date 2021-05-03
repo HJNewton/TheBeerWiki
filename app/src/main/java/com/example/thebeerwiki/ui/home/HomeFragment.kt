@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -23,6 +24,21 @@ class HomeFragment : Fragment() {
                 ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
+        val randomButton: Button = root.findViewById(R.id.randomButton)
+        randomButton.setOnClickListener()
+        {
+            val possibleDestinations = listOf(
+                R.id.nav_carling,
+                R.id.nav_fosters,
+                R.id.nav_carlsberg,
+                R.id.nav_coors_light,
+                R.id.nav_peroni,
+                R.id.nav_stella_artois)
+
+                Navigation.findNavController(root).navigate(possibleDestinations.random())
+
+            //Navigation.findNavController(root).navigate(R.id.nav_stella_artois)
+        }
 
         return root
     }
