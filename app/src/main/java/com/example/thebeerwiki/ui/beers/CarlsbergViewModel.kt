@@ -7,13 +7,13 @@ import androidx.lifecycle.ViewModel
 class CarlsbergViewModel : ViewModel()
 {
     private val _aboutText = MutableLiveData<String>().apply {
-        value = "Fosters was created by two American brothers who moved to Melbourne from  New York." +
+        value = "Carlsberg was first brewed in 1904 by Carl Jacobsen, son of Carlsberg's founder JC Jacobsen." +
                 "\n" +
-                "\nIt was first exported in 1901 to soldiers fighting in the Boer War." +
+                "\nCarlsberg Group maintains a 155 brand portfolio, with Carlsberg Danish Pilsner as its primary product. " +
                 "\n" +
-                "\nFosters was first imported into the UK in 1971 and first brewed here 10 years later in 1981." +
+                "\nThe iconic logo has remained unchanged since 1904." +
                 "\n" +
-                "\nFosters remains the most popular Australian beer worldwide, however it is not regularly consumed in Australia."
+                "\nCarlsberg Danish Pilsner is exported to 140 countries worldwide. "
     }
     val aboutText: LiveData<String> = _aboutText
 }

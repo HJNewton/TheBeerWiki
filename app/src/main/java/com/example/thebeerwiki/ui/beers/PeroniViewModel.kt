@@ -7,13 +7,13 @@ import androidx.lifecycle.ViewModel
 class PeroniViewModel : ViewModel()
 {
     private val _aboutText = MutableLiveData<String>().apply {
-        value = "Fosters was created by two American brothers who moved to Melbourne from  New York." +
+        value = "Peroni Nastro Azzuro is the full name of the beer commonly referred to as 'Peroni' in the UK." +
                 "\n" +
-                "\nIt was first exported in 1901 to soldiers fighting in the Boer War." +
+                "\nThe name means 'Blue Ribbon' in Italian." +
                 "\n" +
-                "\nFosters was first imported into the UK in 1971 and first brewed here 10 years later in 1981." +
+                "\nNastro Azzuro has sponsored teams in Grand Prix motorcycle racing, sponsoring Valentino Rossi in 1997 who went on to win the championship that season." +
                 "\n" +
-                "\nFosters remains the most popular Australian beer worldwide, however it is not regularly consumed in Australia."
+                "\nThe Peroni company was first formed in 1846."
     }
     val aboutText: LiveData<String> = _aboutText
 }

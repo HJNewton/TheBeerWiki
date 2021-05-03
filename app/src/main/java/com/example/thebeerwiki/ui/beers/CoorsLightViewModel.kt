@@ -7,13 +7,13 @@ import androidx.lifecycle.ViewModel
 class CoorsLightViewModel : ViewModel()
 {
     private val _aboutText = MutableLiveData<String>().apply {
-        value = "Fosters was created by two American brothers who moved to Melbourne from  New York." +
+        value = "Molson Coors, the brewer that owns Coors Light, is the world's sixth-largest brewer." +
                 "\n" +
-                "\nIt was first exported in 1901 to soldiers fighting in the Boer War." +
+                "\nIn 2005, Coors Light was awarded a silver medal in the Great American Beer Festival in the American-Style Light Lager catergory." +
                 "\n" +
-                "\nFosters was first imported into the UK in 1971 and first brewed here 10 years later in 1981." +
+                "\nCoors Light became the Official Beer of NASCAR in 2008, succeeding Budweiser." +
                 "\n" +
-                "\nFosters remains the most popular Australian beer worldwide, however it is not regularly consumed in Australia."
+                "\nIn 2011 the company signed a $375m deal with the National Hockey League."
     }
     val aboutText: LiveData<String> = _aboutText
 }

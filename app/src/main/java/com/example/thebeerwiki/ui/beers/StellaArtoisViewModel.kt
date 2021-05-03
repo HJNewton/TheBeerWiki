@@ -7,13 +7,13 @@ import androidx.lifecycle.ViewModel
 class StellaArtoisViewModel : ViewModel()
 {
     private val _aboutText = MutableLiveData<String>().apply {
-        value = "Fosters was created by two American brothers who moved to Melbourne from  New York." +
+        value = "Stella Artois was originally launched as a Christmas beer, named after the Christmas star." +
                 "\n" +
-                "\nIt was first exported in 1901 to soldiers fighting in the Boer War." +
+                "\nBy 1960, after a break in production during World War 2, about 100 million gallons of Stella Artois were being produced per year." +
                 "\n" +
-                "\nFosters was first imported into the UK in 1971 and first brewed here 10 years later in 1981." +
+                "\n1976 was the first year Stella Artois was brewed under contract in the UK." +
                 "\n" +
-                "\nFosters remains the most popular Australian beer worldwide, however it is not regularly consumed in Australia."
+                "\nIn 2020, AB InBev, the brewer of Stella Artois, reduced the alcohol content of Stella Artois from 5.2% to 4.6%; a move that proved controversial amongst consumers."
     }
     val aboutText: LiveData<String> = _aboutText
 }

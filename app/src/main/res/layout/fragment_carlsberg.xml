@@ -75,39 +75,8 @@
                 android:layout_weight="1"
                 android:background="@color/yellow_300"
                 android:gravity="center"
-                android:text="4.0%" />
+                android:text="3.8%" />
 
-        </TableRow>
-
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="0.35"
-                android:background="@color/yellow_300"
-                android:gravity="center"
-                android:text="@string/ingredients"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:layout_marginHorizontal="1dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@color/yellow_300"
-                android:gravity="center"
-                android:text="Barley, Malted Barley, Glucose Syrup" />
         </TableRow>
 
         <TableRow
@@ -137,7 +106,7 @@
                 android:layout_weight="1"
                 android:background="@color/yellow_300"
                 android:gravity="center"
-                android:text="Manchester" />
+                android:text="Numerous UK Locations" />
         </TableRow>
 
         <TableRow
@@ -167,7 +136,7 @@
                 android:layout_weight="1"
                 android:background="@color/yellow_300"
                 android:gravity="center"
-                android:text="Australia" />
+                android:text="Denmark" />
         </TableRow>
 
         <TableRow
@@ -197,7 +166,7 @@
                 android:layout_weight="1"
                 android:background="@color/yellow_300"
                 android:gravity="center"
-                android:text="1888" />
+                android:text="1904" />
         </TableRow>
 
     </TableLayout>
@@ -208,6 +177,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/carlsberg_table"
         app:layout_constraintStart_toStartOf="@+id/carlsberg_table"
         app:layout_constraintTop_toBottomOf="@+id/carlsberg_table" />

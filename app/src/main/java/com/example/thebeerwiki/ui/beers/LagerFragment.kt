@@ -74,7 +74,6 @@ class LagerFragment : Fragment()
             Navigation.findNavController(root).navigate(R.id.nav_stella_artois)
         }
 
-
         return root
     }
 }
