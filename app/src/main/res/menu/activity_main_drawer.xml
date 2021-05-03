@@ -15,8 +15,8 @@
             android:title="@string/menu_beer_list" />
 
         <item
-            android:id="@+id/nav_choose_for_me"
-            android:icon="@drawable/random"
-            android:title="Choose For Me" />
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/phone"
+            android:title="Contact" />
     </group>
 </menu>

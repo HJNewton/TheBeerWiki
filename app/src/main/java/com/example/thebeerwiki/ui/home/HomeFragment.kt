@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
@@ -24,6 +23,12 @@ class HomeFragment : Fragment() {
                 ViewModelProvider(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
+        val beersButton: Button = root.findViewById(R.id.beerButton)
+        beersButton.setOnClickListener()
+        {
+            Navigation.findNavController(root).navigate(R.id.nav_beer)
+        }
+
         val randomButton: Button = root.findViewById(R.id.randomButton)
         randomButton.setOnClickListener()
         {
@@ -36,8 +41,6 @@ class HomeFragment : Fragment() {
                 R.id.nav_stella_artois)
 
                 Navigation.findNavController(root).navigate(possibleDestinations.random())
-
-            //Navigation.findNavController(root).navigate(R.id.nav_stella_artois)
         }
 
         return root
