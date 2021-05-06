@@ -1,9 +1,11 @@
 package com.example.thebeerwiki.ui.beers
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
@@ -24,12 +26,24 @@ class StellaArtoisFragment : Fragment()
             ViewModelProvider(this).get(StellaArtoisViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_stella_artois, container, false)
 
-        val stellaArtoisImage: ImageView = root.findViewById(R.id.stella_artois_image)
-        stellaArtoisImage.setImageResource(R.drawable.stella_artois_image)
+        val sharedPref = activity?.getSharedPreferences("stella_drunk", Context.MODE_PRIVATE)
+        var drunk = sharedPref?.getInt("stella_drunk", 0)
 
-        val stellaArtoisText: TextView = root.findViewById(R.id.stella_artois_trivia_text)
-        stellaArtoisViewModel.aboutText.observe(viewLifecycleOwner, Observer { stellaArtoisText.text = it })
-        
+        val drunk_text: TextView = root.findViewById(R.id.stella_drunk_text)
+        drunk_text.setText(sharedPref?.getInt("stella_drunk", 0).toString())
+
+        val carlingPlusButton: Button = root.findViewById(R.id.plus_stella)
+
+        carlingPlusButton.setOnClickListener()
+        {
+            if (drunk != null)
+            {
+                drunk = drunk!! + 1
+                sharedPref?.edit()?.putInt("stella_drunk", drunk!!)?.apply()
+                drunk_text.setText(sharedPref?.getInt("stella_drunk", 0).toString())
+            }
+        }
+
         return root
     }
 }
