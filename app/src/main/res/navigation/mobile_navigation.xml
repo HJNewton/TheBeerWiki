@@ -19,8 +19,8 @@
 
     <fragment
         android:id="@+id/nav_contact"
-        android:name="com.example.thebeerwiki.ui.beers.AleFragment"
-        android:label="Ales"
+        android:name="com.example.thebeerwiki.ui.beers.ContactFragment"
+        android:label="Contact"
         tools:layout="@layout/fragment_contact" />
 
     <fragment

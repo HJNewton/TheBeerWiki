@@ -8,17 +8,17 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.thebeerwiki.R
 
-class AleFragment : Fragment() {
+class ContactFragment : Fragment() {
 
-    private lateinit var aleViewModel: AleViewModel
+    private lateinit var contactViewModel: ContactViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        aleViewModel =
-                ViewModelProvider(this).get(AleViewModel::class.java)
+        contactViewModel =
+                ViewModelProvider(this).get(ContactViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_contact, container, false)
 
         return root
