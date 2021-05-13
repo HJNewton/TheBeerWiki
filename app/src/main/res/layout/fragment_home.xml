@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
-
+ 
 <ScrollView
 android:layout_width="match_parent"
 android:layout_height="match_parent"
@@ -65,7 +65,7 @@ app:layout_constraintTop_toTopOf="parent">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
-                android:text="The Beer Wiki is designed to provide you with all of the information you need about your favourite beers!"
+                android:text="The Beer Wiki is made to help inform you of the best beers around!"
                 android:textAlignment="center">
 
 
@@ -189,7 +189,7 @@ app:layout_constraintTop_toTopOf="parent">
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Your Beers:"
+                                android:text="Your Beers"
                                 android:textAlignment="center"
                                 android:textColor="#FFFFFF"
                                 android:textSize="28sp"
